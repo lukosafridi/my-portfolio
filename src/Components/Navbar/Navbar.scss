@@ -1,0 +1,33 @@
+.navbar{
+    height: 100px;
+    // background-color: green;
+
+    .wrapper{
+        width: 1366px;
+        height: 100%;
+        // background-color: yellow;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+
+
+        span{
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+        }
+
+        .socials{
+            display: flex;
+            gap: 20px;
+
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    
+}
