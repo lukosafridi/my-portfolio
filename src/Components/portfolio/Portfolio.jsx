@@ -41,16 +41,20 @@ const Single = ({ item }) => {
     const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
 
+
+
+
     return (
-        <section ref={ref} >
+        <section >
             <div className="container">
                 <div className="wrapper">
-                    <div className="imgcontainer">
+                    <div className="imgcontainer" ref={ref}>
                         <img src={item.img} alt="" />
                     </div>
-                    <motion.div className="textcontainer" >
+                    <motion.div className="textcontainer" style={{y}} >
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
+                        <button><a href="#">See Demo</a></button>
                     </motion.div>
                 </div>
             </div>
@@ -73,7 +77,7 @@ const Portfolio = () => {
 
 
     return (
-        <div className='portfolio' ref={ref}>
+        <div id='Portfolio' className='portfolio' ref={ref}>
             <div className="progress">
                 <h1>Featured Works</h1>
                 <motion.div style={{ scaleX }} className="progressbar"></motion.div>
