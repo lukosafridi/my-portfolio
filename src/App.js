@@ -1,5 +1,6 @@
 import './App.scss';
 import Navbar from './Components/Navbar/Navbar';
+import Contact from './Components/contact/Contact';
 import Hero from './Components/hero/Hero';
 import Parallax from './Components/parallax/Parallax';
 import Portfolio from './Components/portfolio/Portfolio';
@@ -29,7 +30,7 @@ function App() {
 
 
       <section id='Contact'>
-        <h1>Contact</h1>
+        <Contact />
       </section>
     </div>
   );
