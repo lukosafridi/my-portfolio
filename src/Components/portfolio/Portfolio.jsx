@@ -38,7 +38,7 @@ const Single = ({ item }) => {
     const { scrollYProgress } = useScroll({ target: ref });
 
 
-    const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+    const y = useTransform(scrollYProgress, [0, 1], [-500, 500]);
 
 
 
