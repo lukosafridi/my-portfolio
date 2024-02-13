@@ -24,11 +24,12 @@ function App() {
           <Services />
         </section>
 
-        <section>
+        <section >
           <Parallax type="portfolio" />
         </section>
 
-        <Portfolio />
+
+        <Portfolio id='Portfolio' />
 
 
         <section id='Contact'>
