@@ -32,6 +32,16 @@
                 font-size: 40px;
                 font-weight: bold;
             }
+            a:hover{
+                scale: 1.2;
+                transition-duration: 0.5s;
+                cursor: pointer;
+                
+            }
+            a:active{
+                scale: 1;
+                transition-duration: 0.1s;
+            }
         }
     }
 

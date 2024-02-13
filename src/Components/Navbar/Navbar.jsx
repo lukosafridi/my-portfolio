@@ -14,7 +14,7 @@ const Navbar = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}>
-          My Portfolio
+          Shahzaib Logo
         </motion.span>
         <motion.div className="socials"
           initial={{ opacity: 0, scale: 0.5 }}

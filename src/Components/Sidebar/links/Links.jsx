@@ -62,7 +62,7 @@ const Links = () => {
           key={item}
           spy={true}
           smooth={true}
-          duration={100}
+          duration={500}
           onClick={() => {
             scroll.scrollToTop();
           }}
