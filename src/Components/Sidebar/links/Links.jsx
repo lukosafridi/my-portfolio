@@ -18,18 +18,18 @@ const variants = {
     }
   }
 }
-const itemsVariants = {
-  open: {
-    y: 0,
-    opacity: 1,
+// const itemsVariants = {
+//   open: {
+//     y: 0,
+//     opacity: 1,
 
-  },
-  closed: {
-    y: 50,
-    opacity: 0,
+//   },
+//   closed: {
+//     y: 50,
+//     opacity: 0,
 
-  }
-}
+//   }
+// }
 
 
 const Links = () => {
