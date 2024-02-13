@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import './Test.scss';
 
 const Test = () => {
@@ -8,17 +8,17 @@ const Test = () => {
 
   const variants = {
     visible: {
-      opacity:1,
-      x:100,
+      opacity: 1,
+      x: 100,
       transition: { staggerChildren: 0.3 }
     },
     hidden: {
-      opacity:0, 
+      opacity: 0,
     }
   };
 
-  const items =[
-    "item1","item2","item3","item4"
+  const items = [
+    "item1", "item2", "item3", "item4"
   ];
   return (
     <div className='course'>
