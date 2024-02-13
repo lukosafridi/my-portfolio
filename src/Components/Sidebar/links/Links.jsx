@@ -1,5 +1,9 @@
 import './links.scss';
+// import { motion } from 'framer-motion';
+// mport { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const variants = {
   open: {
@@ -33,13 +37,38 @@ const Links = () => {
   const items = [
     "Home", "About", "Portfolio", "Contact"
   ]
+  useEffect(() => {
+    const handleScrollTo = (id) => {
+      const element = document.getElementById(id)
+        ;
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    };
 
+    const handleClick = (id) => {
+      handleScrollTo(id)
+        ;
+    };
+
+    // Clean up event listener
+    return () => window.removeEventListener('click', handleClick);
+  }, []);
   return (
     <motion.div className='links' variants={variants}>
-      {items.map(items => (
-        <motion.a href={`#${items}`} key={items} variants={itemsVariants} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-          {items}
-        </motion.a>
+      {items.map(item => (
+        <ScrollLink
+          to={item}
+          key={item}
+          spy={true}
+          smooth={true}
+          duration={100}
+          onClick={() => {
+            scroll.scrollToTop();
+          }}
+        >
+          {item}
+        </ScrollLink>
       ))}
     </motion.div>
   )

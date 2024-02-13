@@ -51,7 +51,7 @@ const Single = ({ item }) => {
                     <div className="imgcontainer" ref={ref}>
                         <img src={item.img} alt="" />
                     </div>
-                    <motion.div className="textcontainer" style={{y}} >
+                    <motion.div className="textcontainer" style={{ y }} >
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
                         <button><a href="#">See Demo</a></button>
