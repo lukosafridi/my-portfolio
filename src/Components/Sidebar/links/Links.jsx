@@ -1,6 +1,5 @@
 import './links.scss';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 const variants = {
   open: {
@@ -38,9 +37,9 @@ const Links = () => {
   return (
     <motion.div className='links' variants={variants}>
       {items.map(items => (
-        <motion.Link to={`#${items}`} key={items} variants={itemsVariants} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+        <motion.a href={`#${items}`} key={items} variants={itemsVariants} whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
           {items}
-        </motion.Link>
+        </motion.a>
       ))}
     </motion.div>
   )
