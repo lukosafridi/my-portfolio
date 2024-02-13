@@ -21,7 +21,7 @@ const Contact = () => {
           </div>
           <div className="item">
             <h2>Address</h2>
-            <span>Allah Wali Colony Block 6 P.E.C.H.S Karachi</span>
+            <span>A/56 Block 6 P.E.C.H.S Karachi</span>
           </div>
         </div>
       </div>

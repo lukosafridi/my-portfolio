@@ -4,6 +4,16 @@ import { motion, useInView } from 'framer-motion';
 
 const Services = () => {
 
+
+
+    // const services = [
+    //     {
+    //         title: "Branding",
+    //         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error atque facilis magnam saepe quidem excepturi quisquam consectetur maxime. Voluptatibus sapiente at dignissimos rem earum consequatur perspiciatis ex unde est!",
+
+    //     },
+    // ]
+
     const ref = useRef();
 
     const isInView = useInView(ref,{margin:"-100px"});
