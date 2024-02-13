@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './contact.scss';
 
 const Contact = () => {
@@ -12,11 +13,11 @@ const Contact = () => {
         <div className="conlinks">
           <div className="item">
             <h2>Email</h2>
-            <span><a href="mailto:shahzaibafridi3377@gmail.com">Shahzaibafridi3377@gmail.com</a></span>
+            <span><Link to="mailto:shahzaibafridi3377@gmail.com">Shahzaibafridi3377@gmail.com</Link></span>
           </div>
           <div className="item">
             <h2>Phone</h2>
-            <span><a href="tel:+923480276224">+923480276224</a></span>
+            <span><Link to="tel:+923480276224">+923480276224</Link></span>
           </div>
           <div className="item">
             <h2>Address</h2>
@@ -32,7 +33,7 @@ const Contact = () => {
           <input type="email" placeholder='Email' />
           <textarea rows={8} placeholder='Message' />
         </form>
-          <button>Submit</button>
+        <button>Submit</button>
       </div>
     </div>
   )

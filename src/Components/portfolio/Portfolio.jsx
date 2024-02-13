@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import './portfolio.scss';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 
 const items = [
@@ -54,7 +55,7 @@ const Single = ({ item }) => {
                     <motion.div className="textcontainer" style={{y}} >
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button><a href="#">See Demo</a></button>
+                        <button><Link to="#">See Demo</Link></button>
                     </motion.div>
                 </div>
             </div>
