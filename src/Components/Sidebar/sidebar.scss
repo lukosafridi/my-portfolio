@@ -18,7 +18,7 @@
         z-index: 1000;
         /* From https://css.glass */
         /* From https://css.glass */
-        
+
 
 
         .links {
@@ -81,14 +81,19 @@
 
 
 // Mobile Responsive Code
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 600px) {
     .sidebar {
 
 
 
 
         .bg {
-            width: 100%;
+            width: 100vh;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background: white;
         }
     }
 }
