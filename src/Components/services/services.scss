@@ -53,6 +53,7 @@
             h1 {
                 font-size: 96px;
                 font-weight: 100;
+                
 
                 b:hover {
                     color: orange;
@@ -97,6 +98,127 @@
                 cursor: pointer;
                 border: none;
                 
+            }
+        }
+    }
+}
+
+
+
+
+// Mobile Responsive Code
+@media only screen and (max-width: 600px) {
+    .services {
+        background: linear-gradient(180%, #0c0c1d, #111132);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        justify-content: space-between;
+        padding: 40px 20px;
+        gap: 50px;
+    
+        .textcontainer {
+            flex: 1;
+            align-self: flex-end;
+            align-items: center;
+            display: flex;
+            gap: 10px;
+    
+            p {
+                font-size: 17px;
+                // font-weight: 200;
+                color: gray;
+                text-align: gray;
+            }
+    
+            hr {
+                width: 230px;
+                border: none;
+                border-top: 0.5px solid gray;
+            }
+        }
+    
+        .titlecontainer {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+    
+    
+    
+            .title {
+                display: flex;
+                align-items: center;
+                gap: 0px;
+    
+    
+    
+                img {
+                    width: 170px;
+                    height: 60px;
+                    border-radius: 50px;
+                    object-fit: cover;
+                }
+    
+                h1 {
+                    font-size: 40px;
+                    font-weight: 100;
+                    text-align: center;
+                    line-height: 40px;
+    
+                    b:hover {
+                        color: orange;
+                        transition-duration: 0.5s;
+                    }
+                }
+    
+                button {
+                    width: 200px;
+                    height: 60px;
+                    background-color: orange;
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    font-size: 15px;
+                }
+            }
+        }
+    
+        .listcontainer {
+            flex: 2s;
+            // max-width: 40%;
+            // margin: auto;
+            display: flex;
+            // padding-bottom: 50px;
+    
+            .box {
+                height: auto;
+                padding: 10px;
+                border: 0.5px solid gray;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 20px;
+
+
+
+                h2{
+                    font-size: 20px;
+                }
+    
+                p {
+                    font-size: 12px;
+                }
+    
+                button {
+                    padding: 10px;
+                    background-color: orange;
+                    cursor: pointer;
+                    border: none;
+                    
+                }
             }
         }
     }
