@@ -260,3 +260,134 @@
     }
 }
 }
+
+
+// Mobile Responsive Code
+@media only screen and (max-width: 600px) {
+    .contact {
+        height: 100%;
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+        .textcontainer {
+            width: 50%;
+    
+    
+            h2 {
+                font-size: 80px;
+                line-height: 5rem;
+                color: orange;
+            }
+    
+            .conlinks {
+                padding-top: 20px;
+    
+    
+                .item {
+                    padding: 5px;
+    
+                    h2 {
+                        font-size: 20px !important;
+                        line-height: 2rem;
+                        color: white;
+                    }
+    
+                    a:hover {
+                        color: orange;
+                    }
+                }
+            }
+        }
+    
+        .formcontainer {
+            width: 50%;
+            text-align: center;
+            position: relative;
+    
+            .phonesvg {
+                position: absolute;
+                stroke: oranges;
+                margin: auto;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+    
+                input {
+                    padding: 10px 10px;
+                    margin: 0px 0px 15px 0px;
+                    color: white;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    z-index: 99;
+                }
+    
+                input:hover {
+                    border: 1px solid orange;
+                }
+    
+                input:focus {
+                    outline: 1px solid orange;
+                    border: 1px solid orange;
+                }
+    
+                textarea {
+                    padding: 10px 10px;
+                    color: white;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    z-index: 99;
+                }
+    
+                textarea:hover {
+                    border: 1px solid orange;
+                }
+    
+                textarea:focus {
+                    outline: 1px solid orange;
+                    border: 1px solid orange;
+                }
+    
+    
+                button {
+                    padding: 7px 50px;
+                    margin: 15px 0px;
+                    font-size: 16px;
+                    background-color: transparent;
+                    color: white;
+                    border: 1px solid orange;
+                    border-radius: 5px;
+                    z-index: 99;
+                }
+    
+                button:hover {
+                    background-color: orange;
+                    color: black;
+                    border: 1px solid orange;
+                    transition-duration: 0.3s;
+                    cursor: pointer;
+                }
+    
+                button:active {
+                    scale: 0.8;
+                    transition-duration: 0.3s;
+                }
+    
+                .error{
+                    color: red;
+                }
+                .success{
+                    color: greenyellow;
+                }
+            }
+    
+        }
+    }
+}

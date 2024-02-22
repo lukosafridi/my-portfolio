@@ -9,25 +9,29 @@ const items = [
         id: 1,
         title: "React Portfolio",
         img: "https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nemo deleniti corrupti maxime, tempore sequi tempora minus iste necessitatibus voluptas sint fugiat soluta magnam aperiam laboriosam at fuga laudantium odit."
+        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nemo deleniti corrupti maxime, tempore sequi tempora minus iste necessitatibus voluptas sint fugiat soluta magnam aperiam laboriosam at fuga laudantium odit.",
+        href: "#"
     },
     {
         id: 2,
         title: "JavaScript Project",
         img: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nemo deleniti corrupti maxime, tempore sequi tempora minus iste necessitatibus voluptas sint fugiat soluta magnam aperiam laboriosam at fuga laudantium odit."
+        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nemo deleniti corrupti maxime, tempore sequi tempora minus iste necessitatibus voluptas sint fugiat soluta magnam aperiam laboriosam at fuga laudantium odit.",
+        href: "#"
     },
     {
         id: 3,
         title: "Wordpress Website",
         img: "https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nemo deleniti corrupti maxime, tempore sequi tempora minus iste necessitatibus voluptas sint fugiat soluta magnam aperiam laboriosam at fuga laudantium odit."
+        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nemo deleniti corrupti maxime, tempore sequi tempora minus iste necessitatibus voluptas sint fugiat soluta magnam aperiam laboriosam at fuga laudantium odit.",
+        href: "#"
     },
     {
         id: 4,
         title: "Bootstrap portfolio",
         img: "https://images.pexels.com/photos/225769/pexels-photo-225769.jpeg?auto=compress&cs=tinysrgb&w=600",
-        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nemo deleniti corrupti maxime, tempore sequi tempora minus iste necessitatibus voluptas sint fugiat soluta magnam aperiam laboriosam at fuga laudantium odit."
+        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nemo deleniti corrupti maxime, tempore sequi tempora minus iste necessitatibus voluptas sint fugiat soluta magnam aperiam laboriosam at fuga laudantium odit.",
+        href: "#"
     },
 ];
 
@@ -39,7 +43,7 @@ const Single = ({ item }) => {
     const { scrollYProgress } = useScroll({ target: ref });
 
 
-    const y = useTransform(scrollYProgress, [0, 1], [-500, 500]);
+    const y = useTransform(scrollYProgress, [0, 1], [50, 50]);
 
 
 
@@ -55,7 +59,7 @@ const Single = ({ item }) => {
                     <motion.div className="textcontainer" style={{ y }} >
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button><Link to="#">See Demo</Link></button>
+                        <button><Link to={item.href}>See Demo</Link></button>
                     </motion.div>
                 </div>
             </div>

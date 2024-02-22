@@ -97,3 +97,118 @@
         
     }
 }
+
+
+
+
+// Mobile Responsive Code
+@media only screen and (max-width: 600px) {
+    .portfolio{
+        position: relative;
+        padding: 20px 0px;
+    
+        
+    
+    
+    
+        .progress{
+            position: sticky;
+            height: 160px;
+            top: 0;
+            left: 0;
+            padding-top: 100px;
+            text-align: center;
+            color: orange;
+            font-size: 36px;
+    
+            h1{
+                font-size: 35px;
+            }
+    
+            
+    
+            .progressbar{
+                height: 10px;
+                background-color: white;
+            }
+        }
+    
+    
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: calc(100vh - 160px);
+            padding: 20px 0px;
+    
+            .wrapper{
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                height: 100%;
+                padding-top: 165px;
+                margin: 0px;
+                align-items: center;
+                gap: 0px;
+    
+    
+                .imgcontainer{
+                    flex: 1;
+                    height: 50%;
+                    text-align: center;
+    
+                    
+                    
+                    
+                    
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                }
+        
+                .textcontainer{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+                    padding: 0px 20px;
+    
+                    h2{
+                        font-size: 35px;
+                    }
+    
+                    p{
+                        color: gray;
+                        font-size: 15px;
+                    }
+    
+                    button{
+                        background-color: orange;
+                        color: black;
+                        border: none;
+                        border-radius: 10px;
+                        width: 200px;
+                        padding: 10px;
+                        cursor: pointer;
+    
+    
+                        a{
+                            font-size: 16px;
+                        }
+                    }
+    
+    
+                }
+    
+            }
+    
+            
+        }
+    }
+}
