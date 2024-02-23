@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser';
 
 const variants = {
   initial: {
-    y: 500,
+    y: 400,
     opacity: 0,
   },
   animate: {
@@ -31,7 +31,7 @@ const Contact = () => {
   const [success,setSuccess] = useState(false);
 
 
-  const IsInView = useInView(ref, { margin: "-100px" });
+  const IsInView = useInView(ref, { margin: "0px" });
 
 
 
