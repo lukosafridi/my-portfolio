@@ -172,7 +172,34 @@
 
 }
 
-
+@media only screen and (max-width: 1550px) {
+    .hero {
+        .wrapper {
+            width: 1220px;   
+            .textContainer {
+                width: 45%;
+    
+                h2 {
+                    font-size: 35px;
+                }
+    
+                h1 {
+                    font-size: 55px;
+                }
+            }
+        }
+        .slidingtextcontaier {
+            font-size: 34vh;
+        }
+        .imageContainer {
+            right: 150px;
+            position: absolute;
+            img{
+                width: 610px;
+            }
+        }
+    }
+}
 
 // Mobile Responsive Code
 @media only screen and (max-width: 600px) {
@@ -237,3 +264,4 @@
         }
     }
 }
+

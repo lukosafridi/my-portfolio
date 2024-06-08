@@ -37,6 +37,7 @@
             }
 
             a:hover {
+                color: #663399;
                 scale: 1.2;
                 transition-duration: 0.5s;
                 cursor: pointer;
@@ -64,14 +65,22 @@
     }
 }
 
+@media only screen and (max-width: 1550px) {
+    .sidebar {
+        .bg {
+            width: 320px;
+            .links {
+                a {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
 
 
 @media only screen and (max-width: 1366px) {
     .sidebar {
-        
-
-
-
         .bg {
             width: 300px;
         }

@@ -34,11 +34,14 @@
 }
 
 // Laptop responsive code
-@media only screen and (max-width: 1367px) {
+@media only screen and (max-width: 1550px) {
+    body{
+        overflow-x: hidden;
+    }
     .navbar {
 
         .wrapper {
-            width: 100%;
+            width: 1550px;
             height: 100%;
             margin: auto;
             display: flex;
@@ -47,7 +50,8 @@
             padding: 0px 150px;
         }
     }
-}
+  }
+
 
 
 //Mobile responsive code
