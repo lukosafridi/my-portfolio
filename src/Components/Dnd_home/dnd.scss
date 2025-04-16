@@ -1,0 +1,59 @@
+.hero {
+    width: 800px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img.asterisk {
+        width: 160px;
+        position: absolute;
+        top: 80px;
+        left: -137px;
+        animation: rotate 4s linear infinite;
+    }
+
+    img.gameboy {
+        width: 660px;
+    }
+    
+    img.dndtxt {
+        width: 100%;
+        margin-top: -160px;
+    }
+
+    p{
+        width: 100%;
+
+        span {
+            display: block;
+            background-color: #D9ED7A;
+            width: 220px;
+            font-size: 14px;
+            line-height: 19px;
+            font-family: rubik;
+            color: #333335;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 2px 5px 0px 5px;
+            border-radius: 0px 25px 25px 0px;
+            margin-top: 10px;
+        }
+    }
+    
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+

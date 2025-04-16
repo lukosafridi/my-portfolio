@@ -1,0 +1,26 @@
+.main-header {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+
+
+    .header-left {
+        width: 50%;
+        
+
+        .logo {
+            cursor: pointer;
+            width: 140px;
+        }
+    }
+
+    .header-right {
+        width: 50%;
+        text-align: end;
+
+        img.print-mark {
+            width: 40px;
+        }
+    }
+}

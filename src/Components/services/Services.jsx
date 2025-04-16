@@ -17,7 +17,6 @@ const Services = () => {
     const ref = useRef();
 
     const isMobile = window.innerWidth <= 600;
-
     const isInView = useInView(ref, { margin: "-100px" });
 
 
