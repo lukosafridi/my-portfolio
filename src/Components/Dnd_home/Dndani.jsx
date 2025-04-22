@@ -77,8 +77,7 @@ const Dndani = () => {
           rotateY: rotate.y,
         }}
         transition={{ type: "spring", stiffness: 120, damping: 15 }}
-        // variants={scalani}
-        // whileHover="hover"
+
         className="gameboy"
         src="/gameboy.png"
         alt="Image Not Available"
