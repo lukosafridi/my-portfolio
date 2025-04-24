@@ -7,6 +7,7 @@ import Hero from "./Components/hero/Hero";
 import Parallax from "./Components/parallax/Parallax";
 // import Portfolio from "./Components/portfolio/Portfolio";
 import Services from "./Components/services/Services";
+import Practice from "./Components/Practce/Practice";
 // import Dndani from './Components/Dnd_home/Dndani';
 // import Dndheader from './Components/dndheader/Dndheader';
 
@@ -92,6 +93,7 @@ function App() {
           exit="hidden"
         >
           <Navbar />
+          <Practice/>
           <Hero />
         </motion.section>
 
